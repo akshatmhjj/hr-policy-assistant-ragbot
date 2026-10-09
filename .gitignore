@@ -20,5 +20,8 @@ htmlcov/
 build/
 dist/
 
+# Generated ChromaDB data
+chroma_data/
+
 # macOS
 .DS_Store

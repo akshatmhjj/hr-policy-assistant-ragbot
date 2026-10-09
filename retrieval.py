@@ -81,10 +81,11 @@ def search(collection, question, top_k=3):
 
     for i, text in enumerate(results["documents"][0]):
         matches.append({
-            "text": text,
-            "source": results["metadatas"][0][i]["source"],
-            "distance": results["distances"][0][i],
-        })
+        "chunk_id": results["ids"][0][i],
+        "text": text,
+        "source": results["metadatas"][0][i]["source"],
+        "distance": results["distances"][0][i],
+})
 
     return matches
 
